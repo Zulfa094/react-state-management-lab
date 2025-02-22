@@ -97,7 +97,6 @@ const App = () => {
 
     const newTeam = [...team, fighter]
     setTeam(newTeam)
-    // setTeam([...team, fighter]);
 
     const newZombieFighters = zombieFighters.filter(
       (zombieFighter) => zombieFighter.id !== fighter.id
@@ -162,12 +161,6 @@ const App = () => {
   }
 
   const totalStrength = () => {
-    // if (team.length === 0) {
-    //   return 0;
-    // } else {
-    //   return team.reduce((total, fighter) => {
-    //     return total + fighter.strength }, 0);
-    // }
     let total = 0
     if (team.length === 0) {
       return total
@@ -180,12 +173,6 @@ const App = () => {
   }
 
   const totalAgility = () => {
-    // if (team.length === 0) {
-    //   return 0;
-    // } else {
-    //   return team.reduce((total, fighter) => {
-    //     return total + fighter.agility }, 0);
-    // }
     let total = 0
     if (team.length === 0) {
       return total
